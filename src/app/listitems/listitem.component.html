@@ -1,0 +1,12 @@
+<div class="item-photo">
+    <div 
+        class="item-image"
+        [ngStyle]="{'background-image': 'url(' + item.url + ')'}"
+    >
+    </div>
+    <div class="item-content">
+        <h3>{{ item.name }}</h3>
+        <h4>&#8377;{{ item.price }}</h4>
+        <p>{{ textTruncate(item.description,280,'...') }}</p>
+    </div>
+</div>

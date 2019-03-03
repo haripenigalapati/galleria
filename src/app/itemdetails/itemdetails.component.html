@@ -1,0 +1,23 @@
+<div class="item-details-wrap">
+    <div class="item-details-inner">
+        <div class="close">
+            <button (click)="closeDetails()" class="close-btn"><img src="../assets/images/close.png"></button>
+        </div>
+        <div class="scrollable-content">
+            <div class="item-image">
+                <img src="{{ itemDetails.url }}">
+            </div>
+            <div class="item-content">
+                <div class="name-price">
+                    <div class="column name">
+                        <h3>{{ itemDetails.name }}</h3>
+                    </div>
+                    <div class="column price">    
+                        <h4>&#8377; {{ itemDetails.price }}</h4>
+                    </div>    
+                </div>
+                <p>{{ itemDetails.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
